@@ -1,16 +1,13 @@
-cv_bridge==1.16.2
-message_filters==1.16.0
+## 注意：以下为通过pip安装的通用依赖。
+## ROS相关包（cv_bridge、rospy、message_filters、sensor_msgs等）请通过apt安装：
+##   ROS2 Humble示例：sudo apt-get install ros-humble-cv-bridge
+##   ROS1 Noetic示例：sudo apt-get install ros-noetic-cv-bridge
+## 深度学习框架请通过conda或系统方式安装（已在环境中安装pytorch/torchvision）。
+
 ml_collections==0.1.1
 numpy==1.23.5
-open3d==0.13.0
+open3d==0.17.0
 opencv_python==4.8.0.76
-py3rosmsgs==1.18.2
 PyYAML==6.0.1
-PyYAML==6.0.1
-rosnumpy==0.0.5.2
-rospy==1.16.0
 scipy==1.10.1
-sensor_msgs==1.13.1
 setuptools==68.0.0
-torch==2.0.1+cu118
-torchvision==0.15.2+cu118
