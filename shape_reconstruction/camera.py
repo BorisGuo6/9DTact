@@ -135,9 +135,10 @@ class Camera:
 
 
 if __name__ == '__main__':
-    f = open("shape_config.yaml", 'r+', encoding='utf-8')
+    f = open("/home/clear/gjx/9DTact/shape_reconstruction/shape_config.yaml", 'r+', encoding='utf-8')
     cfg = yaml.load(f, Loader=yaml.FullLoader)
     camera = Camera(cfg)
+    print('init camera')
     while True:
         raw_img = camera.get_raw_image()
         cv2.imshow('raw_img', raw_img)
